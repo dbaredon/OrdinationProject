@@ -15,8 +15,17 @@
         <div class="row">
             <div class="col-md-4 border p-3">
                 <h3>Vælg patient</h3>
-                <PatientList onSelectPatient="@onSelectPatient" patienter="@patienter"></PatientList>
+
+                <input type="text"
+                       class="form-control mb-2"
+                       placeholder="Søg efter CPR..."
+                       @bind="searchText"
+                       @bind:event="oninput" />
+
+                <PatientList onSelectPatient="@onSelectPatient" patienter="@FilteredePatienter.ToArray()"></PatientList>
+
             </div>
+
             <div class="col-md-4 border p-3">
                 <h3>Vælg lægemiddel</h3>
                 <LaegemiddelList onSelectLægemiddel="@onSelectLægemiddel"></LaegemiddelList>
@@ -65,6 +74,12 @@
     private enum State { Start, OpretPN, OpretFast, OpretSkaev }
     private State PageState = State.Start;
     private string message { get; set; } = "";
+    
+    private string searchText = "";
+    private IEnumerable<PatientResponse> FilteredePatienter => string.IsNullOrWhiteSpace(searchText)
+        ? patienter ?? Array.Empty<PatientResponse>()
+        : patienter?.Where(p => p.cprnr != null && p.cprnr.StartsWith(searchText)) ?? Array.Empty<PatientResponse>();
+
 
     protected override async Task OnInitializedAsync()
     {

@@ -8,7 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63e3fd0f-32b1-46da-87e7-1ff547113277" name="Changes" comment="add migrations" />
+    <list default="true" id="63e3fd0f-32b1-46da-87e7-1ff547113277" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ordination/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ordination/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordination-blazor/Pages/OpretOrdination.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ordination-blazor/Pages/OpretOrdination.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/Model/Ordination.cs" beforeDir="false" afterPath="$PROJECT_DIR$/shared/Model/Ordination.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,30 +32,32 @@
     &quot;assignee&quot;: &quot;dbaredon&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dbaredon/OrdinationProject.git",
-    "accountId": "ba89fe6a-1f97-418b-98e1-db92e8ff2b43"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dbaredon/OrdinationProject.git&quot;,
+    &quot;accountId&quot;: &quot;ba89fe6a-1f97-418b-98e1-db92e8ff2b43&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "dbaredon",
-    "repository": "OrdinationProject"
+    &quot;owner&quot;: &quot;dbaredon&quot;,
+    &quot;repository&quot;: &quot;OrdinationProject&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/tonyxtruong/Desktop/OrdinationProject/ordination-api/Services/DataService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/tonyxtruong/Desktop/OrdinationProject/ordination-api/Services/DataService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ordination-blazor/wwwroot/css/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ordination-blazor/wwwroot/js/bootstrap/bootstrap.bundle.min.js.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ordination-blazor/wwwroot/js/bootstrap/bootstrap.min.js.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -66,7 +72,7 @@
   "keyToString": {
     ".NET Launch Settings Profile.ordination-api: ordination_api.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "#1 on DON-CHECK-",
+    "git-widget-placeholder": "tonys",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -117,7 +123,10 @@
       <option name="presentableId" value="Default" />
       <updated>1744203855618</updated>
       <workItem from="1744203859113" duration="1802000" />
-      <workItem from="1744633827488" duration="1198000" />
+      <workItem from="1744633827488" duration="2926000" />
+      <workItem from="1744666898216" duration="977000" />
+      <workItem from="1744714032672" duration="1166000" />
+      <workItem from="1745425275990" duration="828000" />
     </task>
     <task id="LOCAL-00001" summary="add migrations">
       <option name="closed" value="true" />
@@ -127,7 +136,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744635095960</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="all files added">
+      <option name="closed" value="true" />
+      <created>1744635256730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744635256730</updated>
+    </task>
+    <task id="LOCAL-00003" summary="good">
+      <option name="closed" value="true" />
+      <created>1744635420330</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744635420330</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,11 +160,23 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="all files added" />
     <MESSAGE value="add migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="add migrations" />
+    <MESSAGE value="all files added" />
+    <MESSAGE value="good" />
+    <option name="LAST_COMMIT_MESSAGE" value="good" />
   </component>
 </project>

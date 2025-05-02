@@ -9,9 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63e3fd0f-32b1-46da-87e7-1ff547113277" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ordination-test/UserCaseTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ordination/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ordination/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordination-blazor/Pages/OpretOrdination.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ordination-blazor/Pages/OpretOrdination.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/Model/Ordination.cs" beforeDir="false" afterPath="$PROJECT_DIR$/shared/Model/Ordination.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
   "keyToString": {
     ".NET Launch Settings Profile.ordination-api: ordination_api.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "tonys",
+    "git-widget-placeholder": "Don-TestMethod-UserCase",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -127,6 +126,8 @@
       <workItem from="1744666898216" duration="977000" />
       <workItem from="1744714032672" duration="1166000" />
       <workItem from="1745425275990" duration="828000" />
+      <workItem from="1746113979262" duration="1595000" />
+      <workItem from="1746175858947" duration="3686000" />
     </task>
     <task id="LOCAL-00001" summary="add migrations">
       <option name="closed" value="true" />

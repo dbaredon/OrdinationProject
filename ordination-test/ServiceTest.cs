@@ -42,15 +42,17 @@ public class ServiceTest
     }
 
     [TestMethod]
-    [ExpectedException(typeof(ArgumentNullException))]
-    public void TestAtKodenSmiderEnException()
-    {
-        // Herunder skal man så kalde noget kode,
-        // der smider en exception.
+[ExpectedException(typeof(ArgumentNullException))]
+public void TestAtKodenSmiderEnException()
+{
+    // Vi sender et ugyldigt patientId eller laegemiddelId for at udløse en exception
+    service.OpretDagligFast(
+        0, // Ugyldigt patientId
+        0, // Ugyldigt laegemiddelId
+        1, 1, 1, 1,
+        DateTime.Now,
+        DateTime.Now.AddDays(3)
+    );
+}
 
-        // Hvis koden _ikke_ smider en exception,
-        // så fejler testen.
-
-        Console.WriteLine("Her kommer der ikke en exception. Testen fejler.");
-    }
 }

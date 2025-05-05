@@ -57,15 +57,14 @@ namespace ordination_test
             Assert.AreEqual(15, result);
         }
 
-        [TestMethod] // TC5
-        public void opretDosis_NegativeDoseValue_StillAdded()
-        {
-            var ds = lavDagligSkaevMedDatoer(DateTime.Today, DateTime.Today, new Laegemiddel());
-            ds.opretDosis(new DateTime(1, 1, 1, 9, 0, 0), -1);
+       [TestMethod] // TC5 (opdateret)
+public void opretDosis_NegativeDoseValue_NotAdded()
+{
+    var ds = lavDagligSkaevMedDatoer(DateTime.Today, DateTime.Today, new Laegemiddel());
+    ds.opretDosis(new DateTime(1, 1, 1, 9, 0, 0), -1);
 
-            Assert.AreEqual(1, ds.doser.Count);
-            Assert.AreEqual(-1, ds.doser[0].antal); 
-        }
+    Assert.IsFalse(ds.doser.Count > 0); // Forvent at der ikke er nogen doser
+}
 
         [TestMethod] // TC6
         public void doegnDosis_WithoutDoses_ReturnsZero()

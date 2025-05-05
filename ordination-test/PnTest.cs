@@ -8,7 +8,7 @@ namespace ordination_test
     public class PNTests
     {
         [TestMethod] // TC1
-        public void givDosis_OnStartDate_ReturnsTrue()
+        public void givDosis_OnStartDate()
         {
             var pn = new PN(DateTime.Today, DateTime.Today.AddDays(5), 1.0, new Laegemiddel());
             var dato = new Dato { dato = DateTime.Today };
@@ -19,7 +19,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC2
-        public void givDosis_OnEndDate_ReturnsTrue()
+        public void givDosis_OnEndDate()
         {
             var start = DateTime.Today;
             var end = DateTime.Today.AddDays(5);
@@ -32,7 +32,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC3
-        public void givDosis_BeforeStartDate_ReturnsFalse()
+        public void givDosis_BeforeStartDate()
         {
             var pn = new PN(DateTime.Today, DateTime.Today.AddDays(5), 1.0, new Laegemiddel());
             var dato = new Dato { dato = DateTime.Today.AddDays(-1) };
@@ -43,7 +43,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC4
-        public void givDosis_AfterEndDate_ReturnsFalse()
+        public void givDosis_AfterEndDate()
         {
             var pn = new PN(DateTime.Today, DateTime.Today.AddDays(5), 1.0, new Laegemiddel());
             var dato = new Dato { dato = DateTime.Today.AddDays(6) };
@@ -54,7 +54,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC5
-        public void doegnDosis_NoDosages_ReturnsZero()
+        public void doegnDosis_NoDosages()
         {
             var pn = new PN(DateTime.Today, DateTime.Today.AddDays(5), 1.0, new Laegemiddel());
 
@@ -64,7 +64,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC6
-        public void doegnDosis_TwoDosagesOverTwoDays_ReturnsCorrectValue()
+        public void doegnDosis_TwoDosagesOverTwoDays()
         {
             var pn = new PN(DateTime.Today, DateTime.Today.AddDays(5), 2.0, new Laegemiddel());
             pn.givDosis(new Dato { dato = DateTime.Today });

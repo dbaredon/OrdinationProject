@@ -7,8 +7,8 @@ namespace ordination_test
     [TestClass]
     public class UseCaseTests
     {
-        [TestMethod]
-        public void TC1_FindPatient_OpretDirekteOgTjekCPR()
+        [TestMethod] // TC1
+        public void FindPatient()
         {
             var patient = new Patient("123456-7890", "Test Person", 70.0); 
 
@@ -18,8 +18,8 @@ namespace ordination_test
             Console.WriteLine($"Patient oprettet: {patient.navn}, CPR: {patient.cprnr}, Vægt: {patient.vaegt} kg");
         }
 
-        [TestMethod]
-        public void TC2_OpretLaegemiddel_TjekNavn()
+        [TestMethod] // TC2
+        public void OpretLaegemiddel()
         {
             var lm = new Laegemiddel("Ibuprofen", 1.0, 1.5, 2.0, "mg");
 
@@ -29,8 +29,8 @@ namespace ordination_test
             Console.WriteLine($"Lægemiddel oprettet: {lm.navn}, enhed: mg/kg/døgn");
         }
 
-        [TestMethod]
-        public void TC3_TjekOrdinationstypeErPN()
+        [TestMethod] // TC3
+        public void TjekOrdinationstypeErPN()
         {
             var type = "PN"; // Simpelt eksempel på valg af type
 
@@ -38,7 +38,7 @@ namespace ordination_test
             Console.WriteLine("Ordinationstype valgt korrekt: PN");
         }
 
-        [TestMethod]
+        [TestMethod] // TC4
         public void TC4_OpretPN_MedGyldigPeriode()
         {
             var start = new DateTime(2025, 5, 1);
@@ -53,8 +53,8 @@ namespace ordination_test
             Console.WriteLine($"Ordination oprettet korrekt med {pn.antalEnheder} enheder fra {pn.startDen.ToShortDateString()} til {pn.slutDen.ToShortDateString()}");
         }
 
-        [TestMethod]
-        public void TC7_OpretPN_UgyldigPeriode_KasterException()
+        [TestMethod] // TC5
+        public void TC7_OpretPN_UgyldigPeriode()
         {
             var start = new DateTime(2025, 5, 10);
             var slut = new DateTime(2025, 5, 1);

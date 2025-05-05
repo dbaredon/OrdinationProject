@@ -174,6 +174,11 @@ public class DataService
             throw new ArgumentException("Patient eller lægemiddel ikke fundet");
         }
 
+        if (doser.Any(d => d.antal < 0))
+        {
+        throw new ArgumentException("Doser kan ikke have negative værdier.");
+        }
+
         var ord = new DagligSkæv(startDato, slutDato, laegemiddel)
         {
             doser = doser.ToList()

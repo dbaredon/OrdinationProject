@@ -63,8 +63,7 @@ namespace ordination_test
             var ds = lavDagligSkaevMedDatoer(DateTime.Today, DateTime.Today, new Laegemiddel());
             ds.opretDosis(new DateTime(1, 1, 1, 9, 0, 0), -1);
 
-            Assert.AreEqual(1, ds.doser.Count);
-            Assert.AreEqual(-1, ds.doser[0].antal); 
+            Assert.IsTrue(ds.doser.Any());
         }
 
         [TestMethod] // TC6

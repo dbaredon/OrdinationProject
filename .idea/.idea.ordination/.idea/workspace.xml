@@ -9,8 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63e3fd0f-32b1-46da-87e7-1ff547113277" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ordination-test/UserCaseTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ordination/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ordination/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordination-test/DagligSkæv.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ordination-test/DagligSkæv.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordination-test/PnTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ordination-test/PnTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordination-test/UserCaseTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ordination-test/UserCaseTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Don-TestMethod-UserCase" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,20 +69,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.ordination-api: ordination_api.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Don-TestMethod-UserCase",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.ordination-api: ordination_api.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ordination-api: ordination_api">
     <configuration name="ordination-api: ordination_api" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ordination-api/ordination-api.csproj" />
@@ -128,6 +130,7 @@
       <workItem from="1745425275990" duration="828000" />
       <workItem from="1746113979262" duration="1595000" />
       <workItem from="1746175858947" duration="3686000" />
+      <workItem from="1746427262406" duration="2428000" />
     </task>
     <task id="LOCAL-00001" summary="add migrations">
       <option name="closed" value="true" />
@@ -178,6 +181,7 @@
     <MESSAGE value="add migrations" />
     <MESSAGE value="all files added" />
     <MESSAGE value="good" />
-    <option name="LAST_COMMIT_MESSAGE" value="good" />
+    <MESSAGE value="msTest for UserCaseTest.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="msTest for UserCaseTest.cs" />
   </component>
 </project>

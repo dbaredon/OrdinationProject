@@ -24,7 +24,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC2
-        public void opretDosis_ValidTime_AddsCorrectDose2()
+        public void opretDosis_ValidTime()
         {
             var ds = lavDagligSkaevMedDatoer(DateTime.Today, DateTime.Today.AddDays(2), new Laegemiddel());
             ds.opretDosis(new DateTime(1, 1, 1, 14, 0, 0), 3);
@@ -34,7 +34,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC3
-        public void doegnDosis_WithTwoDoses_ReturnsSum()
+        public void doegnDosis_WithTwoDoses()
         {
             var ds = lavDagligSkaevMedDatoer(DateTime.Today, DateTime.Today.AddDays(2), new Laegemiddel());
             ds.opretDosis(new DateTime(1, 1, 1, 9, 0, 0), 2);
@@ -46,7 +46,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC4
-        public void samletDosis_WithMultipleDaysAndDoses_ReturnsTotal()
+        public void samletDosis_WithMultipleDaysAndDoses()
         {
             var ds = lavDagligSkaevMedDatoer(new DateTime(2025, 5, 1), new DateTime(2025, 5, 3), new Laegemiddel());
             ds.opretDosis(new DateTime(1, 1, 1, 9, 0, 0), 2);
@@ -58,7 +58,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC5
-        public void opretDosis_NegativeDoseValue_StillAdded()
+        public void opretDosis_NegativeDoseValue()
         {
             var ds = lavDagligSkaevMedDatoer(DateTime.Today, DateTime.Today, new Laegemiddel());
             ds.opretDosis(new DateTime(1, 1, 1, 9, 0, 0), -1);
@@ -68,7 +68,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC6
-        public void doegnDosis_WithoutDoses_ReturnsZero()
+        public void doegnDosis_WithoutDoses()
         {
             var ds = lavDagligSkaevMedDatoer(DateTime.Today, DateTime.Today.AddDays(1), new Laegemiddel());
 
@@ -78,7 +78,7 @@ namespace ordination_test
         }
 
         [TestMethod] // TC7
-        public void samletDosis_WithoutDoses_ReturnsZero()
+        public void samletDosis_WithoutDoses()
         {
             var ds = lavDagligSkaevMedDatoer(DateTime.Today, DateTime.Today.AddDays(1), new Laegemiddel());
 
